@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe Account, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  context 'validation' do
+    describe 'name' do
+      let(:account) { FactoryGirl.create(:account) }
+      it 'should be present' do
+        account.name = ''
+        expect(account.valid?).to be false
+      end
+    end
+  end
 end
