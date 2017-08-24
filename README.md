@@ -1,7 +1,6 @@
 # README
 
 ## TODO - Required
-* Create snapshot model
 * Snapshot creation job
 * Snapshot job - product attributes
 * Snapshot job - inventory count
