@@ -1,8 +1,6 @@
 # README
 
 ## TODO - Required
-* Validate max 10 groups per user
-* Validate max 8 products per group
 * Create snapshot model
 * Snapshot creation job
 * Snapshot job - product attributes
