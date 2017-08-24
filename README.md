@@ -1,7 +1,6 @@
 # README
 
 ## TODO - Required
-* Create account model
 * Create group model
 * Create product model
 * Validate max 10 groups per user
