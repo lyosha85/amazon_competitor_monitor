@@ -7,7 +7,7 @@ FactoryGirl.define do
     reviews_count 1
     bsr 1
     bsr_category "MyString"
-    asin "MyString"
     price_cents 1
+    product
   end
 end
