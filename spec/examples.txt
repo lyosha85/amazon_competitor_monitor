@@ -1,3 +1,5 @@
 example_id                             | status | run_time        |
 -------------------------------------- | ------ | --------------- |
-./spec/models/account_spec.rb[1:1:1:1] | passed | 0.02001 seconds |
+./spec/models/account_spec.rb[1:1:1:1] | passed | 0.01013 seconds |
+./spec/models/group_spec.rb[1:1:1:1]   | passed | 0.00984 seconds |
+./spec/models/group_spec.rb[1:1:2:1]   | passed | 0.00341 seconds |
