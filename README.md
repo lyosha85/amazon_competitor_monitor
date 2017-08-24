@@ -3,6 +3,7 @@
 ## TODO - Required
 * Create account model
 * Create group model
+* Create product model
 * Validate max 10 groups per user
 * Validate max 8 products per group
 * Create snapshot model
