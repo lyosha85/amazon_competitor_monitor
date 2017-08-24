@@ -1,5 +1,6 @@
 class Product < ApplicationRecord
   belongs_to :group
+  has_many :snapshots
 
   validates_presence_of :asin
   validate :check_max_8_products_per_group
