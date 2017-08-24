@@ -11,16 +11,18 @@ RSpec.describe Group, type: :model do
         expect(group.valid?).to be false
       end
     end
+
     describe 'account' do
       it 'should be present' do
         group.account = nil
         expect(group.valid?).to be false
       end
     end
+
     describe 'groups per account' do
       it 'max 10' do
          11.times { Group.create(account: account, name: "Group") }
-          expect(account.groups.count).to eq(10)
+         expect(account.groups.count).to eq(10)
       end
     end
   end
