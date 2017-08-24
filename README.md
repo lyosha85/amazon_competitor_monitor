@@ -1,7 +1,6 @@
 # README
 
 ## TODO - Required
-* Add and configure rspec, factorygirl
 * Create account model
 * Create group model
 * Validate max 10 groups per user
