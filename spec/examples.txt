@@ -1,10 +1,13 @@
-example_id                              | status | run_time        |
---------------------------------------- | ------ | --------------- |
-./spec/models/account_spec.rb[1:1:1:1]  | passed | 0.00339 seconds |
-./spec/models/group_spec.rb[1:1:1:1]    | passed | 0.00977 seconds |
-./spec/models/group_spec.rb[1:1:2:1]    | passed | 0.00653 seconds |
-./spec/models/group_spec.rb[1:1:3:1]    | passed | 0.02432 seconds |
-./spec/models/product_spec.rb[1:1:1:1]  | passed | 0.00872 seconds |
-./spec/models/product_spec.rb[1:1:2:1]  | passed | 0.03249 seconds |
-./spec/models/product_spec.rb[1:1:3:1]  | passed | 0.02235 seconds |
-./spec/models/snapshot_spec.rb[1:1:1:1] | passed | 0.01808 seconds |
+example_id                                               | status | run_time        |
+-------------------------------------------------------- | ------ | --------------- |
+./spec/models/account_spec.rb[1:1:1:1]                   | passed | 0.00394 seconds |
+./spec/models/group_spec.rb[1:1:1:1]                     | passed | 0.00561 seconds |
+./spec/models/group_spec.rb[1:1:2:1]                     | passed | 0.00683 seconds |
+./spec/models/group_spec.rb[1:1:3:1]                     | passed | 0.02595 seconds |
+./spec/models/product_spec.rb[1:1:1:1]                   | passed | 0.03483 seconds |
+./spec/models/product_spec.rb[1:1:2:1]                   | passed | 0.00804 seconds |
+./spec/models/product_spec.rb[1:1:3:1]                   | passed | 0.02228 seconds |
+./spec/models/snapshot_spec.rb[1:1:1:1]                  | passed | 0.01665 seconds |
+./spec/services/get_product_details_service_spec.rb[1:1] | passed | 0.34474 seconds |
+./spec/services/get_product_details_service_spec.rb[1:2] | passed | 0.02826 seconds |
+./spec/services/get_product_details_service_spec.rb[1:3] | passed | 0.26602 seconds |
