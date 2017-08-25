@@ -47,7 +47,7 @@ class GetProductDetailsService
   end
 
   def bsr
-    az_item['SalesRank'].to_i
+    az_item['SalesRank']
   end
 
   def bsr_category
@@ -60,7 +60,18 @@ class GetProductDetailsService
   end
 
   def inventory
-    # todo
+    request = vacuum_request
+    hmac = SecureRandom.base64
+
+    cart = request.cart_create(
+      query: {
+        'HMAC' => hmac,
+        'Item.1.ASIN' => @asin,
+        'Item.1.Quantity' => 999
+      }
+    )
+
+    cart.to_h["CartCreateResponse"]["Cart"]["CartItems"]["CartItem"]["Quantity"]
   end
 
   def az_item
