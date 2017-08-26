@@ -2,7 +2,6 @@
 
 ## TODO - Required
 * Snapshot creation job
-* Snapshot job - inventory count
 * Comparison page
 * Create notification model
 * Create email template showing changes
