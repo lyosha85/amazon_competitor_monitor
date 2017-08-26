@@ -3,7 +3,6 @@ FactoryGirl.define do
     title "MyString"
     images "MyText"
     features "MyText"
-    description "MyText"
     reviews_count 1
     bsr 1
     bsr_category "MyString"
