@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170824225333) do
+ActiveRecord::Schema.define(version: 20170826114900) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "name", null: false
@@ -41,7 +41,6 @@ ActiveRecord::Schema.define(version: 20170824225333) do
     t.string "title"
     t.text "images"
     t.text "features"
-    t.text "description"
     t.integer "reviews_count"
     t.integer "bsr"
     t.string "bsr_category"
@@ -49,6 +48,7 @@ ActiveRecord::Schema.define(version: 20170824225333) do
     t.integer "price_cents"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "inventory"
     t.index ["asin"], name: "index_snapshots_on_asin"
   end
 
