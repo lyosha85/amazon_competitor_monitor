@@ -1,11 +1,18 @@
+require 'open-uri'
+
 class GetProductDetailsService
+  include Service
 
   def initialize(asin)
     @asin = asin
   end
 
-  def process
-    get_product_details
+  def call
+    begin
+      get_product_details
+    rescue Excon::Error::ServiceUnavailable
+      Rails.logger.warn "Error: 503 Service Unavailable while getting inventory for #{@asin}"
+    end
   end
 
   private
@@ -16,85 +23,57 @@ class GetProductDetailsService
       title:          title,
       images:         images,
       features:       features,
-      description:    description,
       reviews_count:  reviews_count,
       bsr:            bsr,
-      bsr_category:   bsr_category,
       price_cents:    price_cents,
-      inventory:      inventory
+      inventory:      inventory,
     }
   end
 
   def title
-    az_item['ItemAttributes']['Title']
+    item_details['ItemAttributes']['Title']
   end
 
   def images
-    az_item['ItemAttributes']['ImageSets']
+    item_details['ItemAttributes']['ImageSets']
   end
 
   def features
-    az_item['ItemAttributes']['Feature']
-  end
-
-  def description
-    az_item['ItemAttributes']
+    item_details['ItemAttributes']['Feature']
   end
 
   def reviews_count
     reviews_page = Nokogiri::HTML(open(customer_reviews_url))
-    reviews = reviews_page.css('.crAvgStars a').last.to_i
+    reviews = reviews_page.css('.crAvgStars a').text.to_i
+  end
+
+  def customer_reviews_url
+    item_details['CustomerReviews']['IFrameURL']
   end
 
   def bsr
-    az_item['SalesRank']
-  end
-
-  def bsr_category
-    category = az_item['SalesRank'].gsub(/\d\s?/, "")
-    category.strip if category
-  end
-
-  def price_cents
-    az_item['ItemAttributes']['ListPrice']['Amount']
-  end
-
-  def inventory
-    request = vacuum_request
-    hmac = SecureRandom.base64
-
-    cart = request.cart_create(
-      query: {
-        'HMAC' => hmac,
-        'Item.1.ASIN' => @asin,
-        'Item.1.Quantity' => 999
-      }
-    )
-
-    cart.to_h["CartCreateResponse"]["Cart"]["CartItems"]["CartItem"]["Quantity"]
-  end
-
-  def az_item
-    @az_item = if vaccum_response.to_h['ItemLookupResponse']['Items']['Request']['IsValid'] == 'True'
-      vaccum_response.to_h['ItemLookupResponse']['Items']['Item']
+    # No BSR provided for items with parent asins
+    if @asin == item_details['ParentASIN']
+      item_details['SalesRank']
+    else
+      item_lookup = VacuumService.call(item_details['ParentASIN'], :item_lookup)
+      item_lookup['ItemLookupResponse']['Items']['Item']['SalesRank']
     end
   end
 
-  def vaccum_response
-    @vaccum_response ||= vacuum_request.item_lookup(
-      query: {
-        ItemId: @asin,
-        ResponseGroup: 'ItemAttributes,Images,Reviews,OfferSummary,SalesRank'
-      }
-    )
+  def price_cents
+    item_details['ItemAttributes']['ListPrice']['Amount']
   end
 
-  def vacuum_request
-    @req ||= Vacuum.new('US')
-    @req.configure(
-      aws_access_key_id: Rails.application.secrets[:amazon_key] || ENV['AZ_KEY'],
-      aws_secret_access_key: Rails.application.secrets[:amazon_secret] || ENV['AZ_SECRET'],
-      associate_tag: Rails.application.secrets[:amazon_tag] || ENV['AZ_TAG'],
-    )
+  def inventory
+    VacuumService.call(@asin, :inventory_count_lookup)
+  end
+
+  def item_details
+    @item_details ||= item_lookup['ItemLookupResponse']['Items']['Item']
+  end
+
+  def item_lookup
+    VacuumService.call(@asin, :item_lookup)
   end
 end
