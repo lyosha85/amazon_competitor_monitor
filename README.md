@@ -1,25 +1,24 @@
 # README
 
 ## TODO - Required
-* Snapshot creation job
+
+* Add form to add a new group
+* Add form to add new asin / amazon url
+* Extract asin from url
+* Refine Snapshot creation job
 * Comparison page
 * Create notification model
 * Create email template showing changes
 * Daily email notification job (end of day?)
-* Add form to add a new group
-* Add form to add new asin / amazon url
-* Extract asin from url
 * Procfile for heroku (sidekiq)
-* Create a heroku cron job
 *
-*
-
 
 ## TODO - Nice to have
 * React & material front-end
 * Save product images from amazon to show what picture was deleted
 * Seperate the snapshot collection and serving into seperate services.
 * Run jobs in batches
+* Error handling for asins that have been removed
 
 ## Requirements
 
