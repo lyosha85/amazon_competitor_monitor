@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20170826114900) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "accounts", force: :cascade do |t|
     t.string "name", null: false
     t.datetime "created_at", null: false
@@ -19,7 +22,7 @@ ActiveRecord::Schema.define(version: 20170826114900) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.integer "account_id", null: false
+    t.bigint "account_id", null: false
     t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 20170826114900) do
 
   create_table "products", force: :cascade do |t|
     t.string "asin"
-    t.integer "group_id"
+    t.bigint "group_id"
     t.datetime "last_checked", default: "1970-01-01 00:00:00"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -52,4 +55,6 @@ ActiveRecord::Schema.define(version: 20170826114900) do
     t.index ["asin"], name: "index_snapshots_on_asin"
   end
 
+  add_foreign_key "groups", "accounts"
+  add_foreign_key "products", "groups"
 end
