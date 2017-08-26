@@ -1,0 +1,1360 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=Qce6MOxk2X6myN651G%2BZZQY/H6QoAWlHKYBTmaTllCg=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:16:18Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:16:18 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>ac616329-3829-4cca-aaac-98b34a023cdd</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:16:18Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="Qce6MOxk2X6myN651G+ZZQY/H6QoAWlHKYBTmaTllCg="></Argument></Arguments><RequestProcessingTime>0.0833403410000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>32853</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A16%3A18Z&amp;v=2&amp;sig=8gFS77iBstgKXFM%252FL%252FZkOMXHFgoytg6SfLvDuvd6oaU%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:16:19 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=TsNcqWwMWgvEATeOF1qBlg==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=RR0ylNek/pKETzSiojwk6/1Y/4pytoNH9hUjxA9Brc8=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:28:36Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:28:35 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>4b25b8ae-e54f-42d2-8137-00c527fa0fdb</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="TsNcqWwMWgvEATeOF1qBlg=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:28:36Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="RR0ylNek/pKETzSiojwk6/1Y/4pytoNH9hUjxA9Brc8="/></Arguments><RequestProcessingTime>0.11927613</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>144-4746302-6048848</CartId><HMAC>rEL2cZ5hErZwn60vjO6+stegEWk=</HMAC><URLEncodedHMAC>rEL2cZ5hErZwn60vjO6%2BstegEWk%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=144-4746302-6048848&amp;associate-id=alexpr00-20&amp;hmac=rEL2cZ5hErZwn60vjO6%2BstegEWk%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:28:36 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=b4VaArUwgfE6F39lGxUK7zw%2BCGROYsjjN6NMdYaoyV4=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:29:02Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:29:02 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>911510ae-ca51-41ba-b706-99df1b9d9a62</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:29:02Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="b4VaArUwgfE6F39lGxUK7zw+CGROYsjjN6NMdYaoyV4="></Argument></Arguments><RequestProcessingTime>0.0184755530000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>32853</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A29%3A02Z&amp;v=2&amp;sig=uIF2oMqW%252Fd%252FF%252FEVEd11gkByaI%252FtBEaYz5EJjf68GJfc%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:29:02 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=m3rbqpsvRALqxTT4aa9DOA==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=i7ouXpr7ifzZ48zdald764ZRTv1G4Wc/rmMu3WncJU8=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:29:06Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:29:06 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>d6256b61-126a-4ee2-9b0f-2ae2db99fbfb</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="m3rbqpsvRALqxTT4aa9DOA=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:29:06Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="i7ouXpr7ifzZ48zdald764ZRTv1G4Wc/rmMu3WncJU8="/></Arguments><RequestProcessingTime>0.08473175</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>138-6131598-8416968</CartId><HMAC>/xhHwNU6PTLdHmLbTbL45SjvGjM=</HMAC><URLEncodedHMAC>%2FxhHwNU6PTLdHmLbTbL45SjvGjM%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=138-6131598-8416968&amp;associate-id=alexpr00-20&amp;hmac=%2FxhHwNU6PTLdHmLbTbL45SjvGjM%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:29:07 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=HBnEF15KtRy4p2RDJkNjJA==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=8WZNahBaFT/qU6P7AxwVUYKI2jTTmhYTILH1kRQIboI=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:31:02Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:31:02 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>7178f57b-24fa-4d2b-8373-f04e833c5bbb</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="HBnEF15KtRy4p2RDJkNjJA=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:31:02Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="8WZNahBaFT/qU6P7AxwVUYKI2jTTmhYTILH1kRQIboI="/></Arguments><RequestProcessingTime>0.090460025</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>136-1118771-1087424</CartId><HMAC>xTQ8dtaEKe8+pgYqbzhqJWemKR4=</HMAC><URLEncodedHMAC>xTQ8dtaEKe8%2BpgYqbzhqJWemKR4%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=136-1118771-1087424&amp;associate-id=alexpr00-20&amp;hmac=xTQ8dtaEKe8%2BpgYqbzhqJWemKR4%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:31:03 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=201CXbPFCILyxR/rkE/Kwpo3HSTn4VzqsBAMNd2l8gY=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:31:16Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:31:16 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>bf207cdd-49b0-47d4-bc46-b72216bb447f</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:31:16Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="201CXbPFCILyxR/rkE/Kwpo3HSTn4VzqsBAMNd2l8gY="></Argument></Arguments><RequestProcessingTime>0.0266319320000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>33500</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A31%3A16Z&amp;v=2&amp;sig=fns%252B%252BCCcsGH5M1MyXbCBPq%252F2V2%252BBk9IeWoaKmxu8uz8%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:31:17 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=5OU%2BazZEhZGQbBmOH0Z9pg==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=%2B4virUf%2Bxdi07dUVy6/s0eWK8Exzo/aS912pzH30kS4=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:31:45Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:31:44 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>9a582f93-4fa8-4342-8113-c7cb834264b7</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="5OU+azZEhZGQbBmOH0Z9pg=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:31:45Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="+4virUf+xdi07dUVy6/s0eWK8Exzo/aS912pzH30kS4="/></Arguments><RequestProcessingTime>0.15925637</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>130-8216150-3706501</CartId><HMAC>jdjJ6fial7H0KrKEF24qS+Te/10=</HMAC><URLEncodedHMAC>jdjJ6fial7H0KrKEF24qS%2BTe%2F10%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=130-8216150-3706501&amp;associate-id=alexpr00-20&amp;hmac=jdjJ6fial7H0KrKEF24qS%2BTe%2F10%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:31:46 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=qnGzjhYngUvNfnpm8KPmLkZrELJGExEsf0FgkViPGP4=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:31:47Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:31:47 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>df9e2392-6f82-48b1-bfc7-7cb66ccbfba4</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:31:47Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="qnGzjhYngUvNfnpm8KPmLkZrELJGExEsf0FgkViPGP4="></Argument></Arguments><RequestProcessingTime>0.0217877710000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>33500</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A31%3A47Z&amp;v=2&amp;sig=vfsOPA%252Fw%252Fj1qQMdCJeN1bwamTdRrD2t9MIl7CyMdJRY%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:31:47 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=hrJf8QzBGc5bS83kQVsAE7sg0Hg65LWlCEnj5j1frZI=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:35:17Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:35:17 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>3e846b68-59c6-40bc-b17f-bc26e21172cd</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:35:17Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="hrJf8QzBGc5bS83kQVsAE7sg0Hg65LWlCEnj5j1frZI="></Argument></Arguments><RequestProcessingTime>0.0183611080000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>33500</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A35%3A17Z&amp;v=2&amp;sig=pcbkwA7V0N%252Bzk9aFmpgOX2xQmNHlSWVkTX4KV1MzULY%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:35:17 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=khUGJKhO4d4iu4Y%2BENFbmw==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=onGrFoR/KRH9R6%2B1Oi%2BfIxOdHVP%2BdSoZB7hGUqbY35Q=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:35:17Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:35:17 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>46391186-8cfc-434d-b539-9588c7375c8f</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="khUGJKhO4d4iu4Y+ENFbmw=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:35:17Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="onGrFoR/KRH9R6+1Oi+fIxOdHVP+dSoZB7hGUqbY35Q="/></Arguments><RequestProcessingTime>0.09536059</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>145-3305867-0288860</CartId><HMAC>pYWAnW7sH72fysOeKWTPQr4e/bg=</HMAC><URLEncodedHMAC>pYWAnW7sH72fysOeKWTPQr4e%2Fbg%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=145-3305867-0288860&amp;associate-id=alexpr00-20&amp;hmac=pYWAnW7sH72fysOeKWTPQr4e%2Fbg%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:35:18 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=sejK3ZQ8mNLW7OIlloNwIg==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=kMPq4M9d8AA5o4B1zQoy8KUUhnIj85YNcOC6nK1gqJ8=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:46:44Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:46:44 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>56d8717e-ab05-4c63-b86b-33e61ab5e9ad</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="sejK3ZQ8mNLW7OIlloNwIg=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:46:44Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="kMPq4M9d8AA5o4B1zQoy8KUUhnIj85YNcOC6nK1gqJ8="/></Arguments><RequestProcessingTime>0.09919976</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>141-9656170-1554223</CartId><HMAC>6eQe5kdwUYjVxnugpwvvpKTyvhw=</HMAC><URLEncodedHMAC>6eQe5kdwUYjVxnugpwvvpKTyvhw%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=141-9656170-1554223&amp;associate-id=alexpr00-20&amp;hmac=6eQe5kdwUYjVxnugpwvvpKTyvhw%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:46:45 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=E5lbu8tLQpTTQxE27hd2tPbWHKKDQre97pr6RP1AWtU=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:46:45Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:46:45 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding,User-Agent
+      Content-Length:
+      - '370'
+      Cneonction:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0"?>
+        <ItemLookupErrorResponse xmlns="http://ecs.amazonaws.com/doc/2013-08-01/"><Error><Code>RequestThrottled</Code><Message>AWS Access Key ID: AKIAJIS2RKSGQSBM252A. You are submitting requests too quickly. Please retry your requests at a slower rate.</Message></Error><RequestID>6144a554-8c5a-4ec5-948d-84842eb5d257</RequestID></ItemLookupErrorResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:46:45 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=n/ii9r1UrOULvR4JEdZeYw==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=HM%2B0lH9eF21hPZ6xt4bDHpO9O08DoqOWbXb3n81lzAU=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:46:55Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:46:55 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>cc4162b2-4bf5-4043-8e20-976b9064831b</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="n/ii9r1UrOULvR4JEdZeYw=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:46:55Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="HM+0lH9eF21hPZ6xt4bDHpO9O08DoqOWbXb3n81lzAU="/></Arguments><RequestProcessingTime>0.14557555</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>131-5295362-3004738</CartId><HMAC>kQWFeeDK8Li3AsQ3uAUoRs4KGm0=</HMAC><URLEncodedHMAC>kQWFeeDK8Li3AsQ3uAUoRs4KGm0%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=131-5295362-3004738&amp;associate-id=alexpr00-20&amp;hmac=kQWFeeDK8Li3AsQ3uAUoRs4KGm0%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:46:56 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=Jm7%2BkbOshn8V6AMBF6lSyHF93OpT8Wiin%2BcdZj16Z5g=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:46:56Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:46:55 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>28cc3a47-867c-4314-ab82-aaf5fb2003d3</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:46:56Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="Jm7+kbOshn8V6AMBF6lSyHF93OpT8Wiin+cdZj16Z5g="></Argument></Arguments><RequestProcessingTime>0.0220352740000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>33500</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A46%3A56Z&amp;v=2&amp;sig=vvHs7fhzHnVjQFZLAmEAF5VjQXY0IClsoSuazqDTiH0%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:46:56 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=vsQee2GOKRP9NlVTPMjRB3DUneAzbfYNwuTF6niYLI0=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:47:14Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:47:14 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>8db97c10-83e8-4654-84f0-16ae683db952</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:47:14Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="vsQee2GOKRP9NlVTPMjRB3DUneAzbfYNwuTF6niYLI0="></Argument></Arguments><RequestProcessingTime>0.0185614850000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>33500</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A47%3A14Z&amp;v=2&amp;sig=K1rW71tnyue8ytGfB%252BVHPaL7vkxtpS%252FCe%252FJ4ITx%252FvzE%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:47:14 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=otxVmHByxmB6ETIYuJzUUw==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=8WJPAJOJ/%2BcGKvwM6ticueKM0ctLObrToxzB8XFtWYo=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:47:14Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:47:13 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>348b5657-dba6-4a3d-825d-04e066fc6706</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="otxVmHByxmB6ETIYuJzUUw=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:47:14Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="8WJPAJOJ/+cGKvwM6ticueKM0ctLObrToxzB8XFtWYo="/></Arguments><RequestProcessingTime>0.07254923</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>132-2974179-5066563</CartId><HMAC>/pXdRA/SL1eHGbhe28fMNpRc8DU=</HMAC><URLEncodedHMAC>%2FpXdRA%2FSL1eHGbhe28fMNpRc8DU%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=132-2974179-5066563&amp;associate-id=alexpr00-20&amp;hmac=%2FpXdRA%2FSL1eHGbhe28fMNpRc8DU%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:47:14 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&HMAC=d00QSv8nSZaJi1n80m0hmg==&Item.1.ASIN=B01KO4Z9TS&Item.1.Quantity=999&Operation=CartCreate&Service=AWSECommerceService&Signature=NXH4x%2BJb%2BpodIFJFwRHEGwvhoU6VHpvrYPDZ%2BUqId%2Bc=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:47:54Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:47:54 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: '<?xml version="1.0" ?><CartCreateResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"/></HTTPHeaders><RequestId>2da9c16f-775f-47b7-8feb-82fdedc5542e</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"/><Argument Name="AssociateTag"
+        Value="alexpr00-20"/><Argument Name="HMAC" Value="d00QSv8nSZaJi1n80m0hmg=="/><Argument
+        Name="Item.1.ASIN" Value="B01KO4Z9TS"/><Argument Name="Item.1.Quantity" Value="999"/><Argument
+        Name="Operation" Value="CartCreate"/><Argument Name="Service" Value="AWSECommerceService"/><Argument
+        Name="SignatureMethod" Value="HmacSHA256"/><Argument Name="SignatureVersion"
+        Value="2"/><Argument Name="Timestamp" Value="2017-08-26T08:47:54Z"/><Argument
+        Name="Version" Value="2013-08-01"/><Argument Name="Signature" Value="NXH4x+Jb+podIFJFwRHEGwvhoU6VHpvrYPDZ+UqId+c="/></Arguments><RequestProcessingTime>0.11372509</RequestProcessingTime></OperationRequest><Cart><Request><IsValid>True</IsValid><CartCreateRequest><Items><Item><ASIN>B01KO4Z9TS</ASIN><Quantity>999</Quantity></Item></Items></CartCreateRequest><Errors><Error><Code>AWS.ECommerceService.InvalidQuantity</Code><Message>You
+        have exceeded the maximum quantity allowed for the following items: B01KO4Z9TS.</Message></Error></Errors></Request><CartId>130-7049132-5489633</CartId><HMAC>4QOWCeMJDP60AcbZhuurRRUn3xM=</HMAC><URLEncodedHMAC>4QOWCeMJDP60AcbZhuurRRUn3xM%3D</URLEncodedHMAC><PurchaseURL>https://www.amazon.com/gp/cart/aws-merge.html?cart-id=130-7049132-5489633&amp;associate-id=alexpr00-20&amp;hmac=4QOWCeMJDP60AcbZhuurRRUn3xM%3D&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;MergeCart=False</PurchaseURL><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItems><SubTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></SubTotal><CartItem><CartItemId>C1WBG9XNCTD8WS</CartItemId><ASIN>B01KO4Z9TS</ASIN><SellerNickname>RIUDA</SellerNickname><Quantity>964</Quantity><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><ProductGroup>Lighting</ProductGroup><Price><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></Price><ItemTotal><Amount>577436</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5,774.36</FormattedPrice></ItemTotal></CartItem></CartItems></Cart></CartCreateResponse>'
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:47:55 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,Reviews,OfferSummary,SalesRank&Service=AWSECommerceService&Signature=Wh7nd4tl0aI3RDxY2MvmWA8IdYnFOp113nP8pUs//S4=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-26T08:47:55Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 26 Aug 2017 08:47:54 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>adbd177d-f7f6-4a76-a84a-a710baf0a2c4</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,Reviews,OfferSummary,SalesRank"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2017-08-26T08:47:55Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="Wh7nd4tl0aI3RDxY2MvmWA8IdYnFOp113nP8pUs//S4="></Argument></Arguments><RequestProcessingTime>0.0191088020000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><ResponseGroup>OfferSummary</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>33500</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><OfferSummary><LowestNewPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></LowestNewPrice><TotalNew>1</TotalNew><TotalUsed>0</TotalUsed><TotalCollectible>0</TotalCollectible><TotalRefurbished>0</TotalRefurbished></OfferSummary><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T08%3A47%3A55Z&amp;v=2&amp;sig=2aklLwT%252BCX2yLuOx4my3LeNpdLeJgr9Nz3MVLaR4bik%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Sat, 26 Aug 2017 08:47:55 GMT
+recorded_with: VCR 3.0.3

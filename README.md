@@ -1,14 +1,7 @@
 # README
 
 ## TODO - Required
-* Create account model
-* Create group model
-* Validate max 10 groups per user
-* Validate max 8 products per group
-* Create snapshot model
 * Snapshot creation job
-* Snapshot job - product attributes
-* Snapshot job - inventory count
 * Comparison page
 * Create notification model
 * Create email template showing changes
@@ -16,6 +9,7 @@
 * Add form to add a new group
 * Add form to add new asin / amazon url
 * Extract asin from url
+* Procfile for heroku (sidekiq)
 * Create a heroku cron job
 *
 *
@@ -24,8 +18,8 @@
 ## TODO - Nice to have
 * React & material front-end
 * Save product images from amazon to show what picture was deleted
-*
-*
+* Seperate the snapshot collection and serving into seperate services.
+* Run jobs in batches
 
 ## Requirements
 
