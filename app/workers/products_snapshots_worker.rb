@@ -1,5 +1,6 @@
 class ProductsSnapshotsWorker
   include Sidekiq::Worker
+  sidekiq_options retry: 1
 
   def perform(asin)
     Rails.logger.info "Attempting to get data of #{asin}."
@@ -20,8 +21,6 @@ class ProductsSnapshotsWorker
   end
 
   def self.execute(asins)
-    debugger
     asins.each{|asin| self.perform_async(asin) }
   end
 end
-

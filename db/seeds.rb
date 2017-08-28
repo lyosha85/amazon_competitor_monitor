@@ -13,8 +13,8 @@ group = Group.create(name: 'Baseball', account: account)
   Product.create(group: group, asin: asin)
 end
 
-group2 = Group.create(name: 'Misc', account: account)
-%w(B015WAI2AC B0193R01EU B01AWZGBJG B01LWEMJVA B01N1JX1O4
-   B005BYZ2PI B0012ETPUE B01MS08YQB B0073YPHHW B06ZZWP9PN).each do |asin|
-  Product.create(group: group2, asin: asin)
-end
+# group2 = Group.create(name: 'Misc', account: account)
+# %w(B015WAI2AC B0193R01EU B01AWZGBJG B01LWEMJVA B01N1JX1O4
+#    B005BYZ2PI B0012ETPUE B01MS08YQB B0073YPHHW B06ZZWP9PN).each do |asin|
+#   Product.create(group: group2, asin: asin)
+# end

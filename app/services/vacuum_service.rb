@@ -23,6 +23,8 @@ class VacuumService
     request = vacuum_request
     hmac = SecureRandom.base64
 
+    retries = 0
+    begin
       cart = request.cart_create(
         query: {
           'HMAC' => hmac,
@@ -30,25 +32,40 @@ class VacuumService
           'Item.1.Quantity' => 999
         }
       )
+    rescue ServiceUnavailable
+      retries += 1
+      sleep 1
+      retry if retries <= 3
+      return nil
+    end
 
     cart = cart.to_h
 
+    # The item turned out to be out of stock, see readme.
     return 0 if cart['CartCreateResponse']['Cart']['Request']['Errors']['Error']['Code'] == 'AWS.ECommerceService.ItemNotEligibleForCart'
     cart['CartCreateResponse']['Cart']['CartItems']['CartItem']['Quantity'].to_i
   end
 
   def item_lookup
-    result = vacuum_request.item_lookup(
-      query: {
-        ItemId: @asin,
-        ResponseGroup: 'ItemAttributes,Images,SalesRank,Reviews'
-      }
-    )
-    Rails.logger.warn "Error: 503 Service Unavailable while getting inventory for #{@asin}"
+    retries = 0
+    begin
+      @result ||= vacuum_request.item_lookup(
+        query: {
+          ItemId: @asin,
+          ResponseGroup: 'ItemAttributes,Images,SalesRank,Reviews'
+        }
+      ).to_h
+    rescue Excon::Error::ServiceUnavailable
+      retries =+ 1
+      sleep 1
+      retry if retries <= 3
+      raise 'Could not connect.'
+    end
 
-    if result.to_h['ItemLookupResponse']['Items']['Request']['IsValid'] == 'True' ||
-       vaccum_response.to_h['ItemLookupResponse']['Items']['Request']['Errors'].nil?
-      return result.to_h
+    request = @result['ItemLookupResponse']['Items']['Request']
+
+    if request['IsValid'] == 'True' || request['Errors'].nil?
+      return @result
     else
       raise 'Vacuum request error.'
     end
