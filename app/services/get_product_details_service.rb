@@ -8,16 +8,7 @@ class GetProductDetailsService
   end
 
   def call
-    error_503_message = "Error: 503 Service Unavailable while getting inventory for #{@asin}"
-    begin
-      get_product_details
-    rescue Excon::Error::ServiceUnavailable
-      Rails.logger.warn error_503_message
-      {error: '503 Excon::Error::ServiceUnavailable'}
-    rescue OpenURI::HTTPError
-      Rails.logger.warn error_503_message
-      {error: '503 OpenURI::HTTPError'}
-    end
+    get_product_details
   end
 
   private
@@ -48,8 +39,15 @@ class GetProductDetailsService
   end
 
   def reviews_count
-    reviews_page = Nokogiri::HTML(open(customer_reviews_url))
-    reviews = reviews_page.css('.crAvgStars a').text.to_i
+    retries = 0
+    begin
+      reviews_page = Nokogiri::HTML(open(customer_reviews_url))
+      reviews = reviews_page.css('.crAvgStars a').text.to_i
+    rescue OpenURI::HTTPError
+      retries += 1
+      retry if retries <= 3
+      nil
+    end
   end
 
   def customer_reviews_url
@@ -60,14 +58,19 @@ class GetProductDetailsService
     # No BSR provided for items with parent asins
     if @asin == item_details['ParentASIN']
       item_details['SalesRank']
-    else
-      item_lookup = VacuumService.call(item_details['ParentASIN'], :item_lookup)
+    elsif item_details['ParentASIN']
+      # item_look makes a second call to get parent asin information
+      item_lookup = VacuumService.call(item_details['ParentASIN'],:item_lookup)
       item_lookup['ItemLookupResponse']['Items']['Item']['SalesRank']
+    else
+      nil
     end
   end
 
   def price_cents
-    item_details['ItemAttributes']['ListPrice']['Amount']
+    item_details['ItemAttributes']['ListPrice'] ?
+                    item_details['ItemAttributes']['ListPrice']['Amount'] : 0
+
   end
 
   def inventory
