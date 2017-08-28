@@ -2,11 +2,11 @@
 
 ## TODO - Required
 
-* Add form to add a new group
-* Add form to add new asin / amazon url
-* Extract asin from url
 * Refine Snapshot creation job
 * Comparison page
+* Add groups controller specs
+* Add asin,amazon_link specs
+* Extract asin from url
 * Create notification model
 * Create email template showing changes
 * Daily email notification job (end of day?)
@@ -19,6 +19,8 @@
 * Seperate the snapshot collection and serving into seperate services.
 * Run jobs in batches
 * Error handling for asins that have been removed
+* Registration & authentication
+* Show a list of snapshots
 
 ## Requirements
 

@@ -1,0 +1,29 @@
+<%= form_with(model: group, local: true, html:{class: 'form'}) do |form| %>
+  <% if group.errors.any? %>
+    <div id="error_explanation">
+      <ul>
+      <% group.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :group_name, class: 'form-control' %>
+  </div>
+
+  <div class="form-group" id="products">
+    <%= form.fields_for :products do |product| %>
+      <%= render 'product_fields', f: product %>
+    <% end %>
+    <div id="add_product">
+      <%= link_to_add_association 'add product', form, :products %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= form.submit %>
+  </div>
+<% end %>

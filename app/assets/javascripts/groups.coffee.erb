@@ -1,0 +1,14 @@
+jQuery(document).on 'turbolinks:load', ->
+  check_to_hide_or_show_add_link = ->
+    if $('#products .nested-fields:visible').length == <%= Product::MAX_PER_GROUP %>
+      $('#add_product a').hide()
+    else
+      $('#add_product a').show()
+
+  $('#products').on 'cocoon:after-insert', ->
+    check_to_hide_or_show_add_link()
+
+  $('#products').on 'cocoon:after-remove', ->
+    check_to_hide_or_show_add_link()
+
+  check_to_hide_or_show_add_link()
