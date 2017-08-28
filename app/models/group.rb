@@ -1,7 +1,7 @@
 class Group < ApplicationRecord
   MAX_PER_ACCOUNT = 10
   belongs_to :account
-  has_many :products
+  has_many :products, dependent: :destroy
 
   validates_presence_of :account, :name
   validate :max_groups_per_account, on: :create
