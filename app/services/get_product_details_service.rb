@@ -8,10 +8,15 @@ class GetProductDetailsService
   end
 
   def call
+    error_503_message = "Error: 503 Service Unavailable while getting inventory for #{@asin}"
     begin
       get_product_details
     rescue Excon::Error::ServiceUnavailable
-      Rails.logger.warn "Error: 503 Service Unavailable while getting inventory for #{@asin}"
+      Rails.logger.warn error_503_message
+      {error: '503 Excon::Error::ServiceUnavailable'}
+    rescue OpenURI::HTTPError
+      Rails.logger.warn error_503_message
+      {error: '503 OpenURI::HTTPError'}
     end
   end
 
