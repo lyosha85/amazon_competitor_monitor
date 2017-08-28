@@ -1,26 +1,27 @@
 # README
 
+Note: I added a couple of hot sellers to my list and I ended up encountering a whole variety of different responses, such as when an item was sold out, removed or became a child-asin. If I had more time, I would write better error handling after learning more about the different kind of responses I can get.
+
+
 ## TODO - Required
 
-* Refine Snapshot creation job
 * Comparison page
 * Add groups controller specs
 * Add asin,amazon_link specs
 * Extract asin from url
 * Create notification model
-* Create email template showing changes
-* Daily email notification job (end of day?)
-* Procfile for heroku (sidekiq)
-*
+* Create email template showing changes using comparison page
+* Create a batch of groups to send out notifications
 
 ## TODO - Nice to have
 * React & material front-end
 * Save product images from amazon to show what picture was deleted
-* Seperate the snapshot collection and serving into seperate services.
-* Run jobs in batches
+* Separate the snapshot collection and serving app into separate app.
 * Error handling for asins that have been removed
 * Registration & authentication
 * Show a list of snapshots
+* Better error handling
+* Smarter way of retrying jobs and information collection
 
 ## Requirements
 
