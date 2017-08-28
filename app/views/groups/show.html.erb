@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-md-12">
+  <p id="notice"><%= notice %></p>
+    <div class="card">
+      <div class="card-block">
+        <h2 class="card-title"><%= @group.name %></h2>
+      </div>
+      <ul class="list-group list-group-flush">
+        <% @group.products.each do |product| %>
+          <li class="list-group-item">
+            <%= link_to product.asin, "#TODO" %>
+          </li>
+        <% end %>
+      </ul>
+      <div class="card-block">
+        <%= link_to 'Edit Group', edit_group_path, class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+</div>

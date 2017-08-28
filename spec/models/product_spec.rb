@@ -21,7 +21,7 @@ RSpec.describe Product, type: :model do
 
     describe 'limit products per group' do
       it 'max 8' do
-        9.times { Product.create(asin: "B00ZLJ1QG", group: group) }
+        9.times { Product.create(asin: "B00ZLJ1QGC", group: group) }
         expect(group.products.count).to eq(8)
       end
     end

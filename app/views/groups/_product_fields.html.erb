@@ -1,0 +1,19 @@
+<div class="form-inline nested-fields">
+  <div class="form-group">
+    <%= f.label :asin %>
+    <%= f.text_field :asin, class: 'form-control mx-sm-3' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :amazon_url %>
+    <%= f.text_field :amazon_url, class: 'form-control mx-sm-3' %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :_destroy, "Remove" %>
+  </div>
+
+  <div class="links">
+    <%= link_to_remove_association "remove product", f %>
+  </div>
+</div>
