@@ -31,7 +31,8 @@ class GetProductDetailsService
   end
 
   def images
-    item_details['ImageSets']['ImageSet'].collect{|image_set| image_set['LargeImage']['URL']} if item_details['ImageSets']['ImageSet']
+    return nil unless item_details['ImageSets']['ImageSet']
+    item_details['ImageSets']['ImageSet'].collect{|image_set| image_set['LargeImage']['URL']}
   end
 
   def features

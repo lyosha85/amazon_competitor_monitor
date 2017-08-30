@@ -9,10 +9,10 @@ class ProductsSnapshotsWorker
 
     snapshot_attributes = GetProductDetailsService.call(asin)
     last_snapshot = Snapshot.where(asin: asin).last
-    last_snapshot.assign_attributes(snapshot_attributes)
+    last_snapshot.assign_attributes(snapshot_attributes) if last_snapshot
 
-    # Only create a snapshot if something changed
-    if last_snapshot.changed?
+    # Only create a snapshot if something changed or brand new product
+    if last_snapshot.blank? || last_snapshot.changed?
       Snapshot.create!(snapshot_attributes)
       Product.where(asin: asin).each{|p| p.update(last_checked: Time.zone.now)}
     else
