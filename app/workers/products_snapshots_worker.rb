@@ -3,6 +3,8 @@ class ProductsSnapshotsWorker
   sidekiq_options retry: 1
 
   def perform(asin)
+    return true if Product.where(asin: asin).last.was_checked_today?
+
     Rails.logger.info "Attempting to get data of #{asin}."
 
     snapshot_attributes = GetProductDetailsService.call(asin)
