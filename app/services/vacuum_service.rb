@@ -32,7 +32,7 @@ class VacuumService
           'Item.1.Quantity' => 999
         }
       )
-    rescue ServiceUnavailable
+    rescue Excon::Error::ServiceUnavailable
       retries += 1
       sleep 1
       retry if retries <= 3
@@ -42,7 +42,8 @@ class VacuumService
     cart = cart.to_h
 
     # The item turned out to be out of stock, see readme.
-    return 0 if cart['CartCreateResponse']['Cart']['Request']['Errors']['Error']['Code'] == 'AWS.ECommerceService.ItemNotEligibleForCart'
+    return 0 if cart['CartCreateResponse']['Cart']['Request']['Errors'] &&
+        cart['CartCreateResponse']['Cart']['Request']['Errors']['Error']['Code'] == 'AWS.ECommerceService.ItemNotEligibleForCart'
     cart['CartCreateResponse']['Cart']['CartItems']['CartItem']['Quantity'].to_i
   end
 
