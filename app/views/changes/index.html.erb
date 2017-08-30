@@ -10,7 +10,7 @@
 
   <% change['new'].each do |k,v|%>
     <% next if change['old'] && change['old'][k] == v%>
-    <%= "New #{k}:" %>: <%= v %>
+    <%= "New #{k}" %>: <%= v %>
     <%= (change['old'] && change['old'][k]) ? "Old #{change['old'][k]}:#{change['old'][v]}" : nil %> <br>
     <hr>
   <% end %>
