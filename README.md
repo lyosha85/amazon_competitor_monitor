@@ -5,13 +5,11 @@ Note: I added a couple of hot sellers to my list and I ended up encountering a w
 
 ## TODO - Required
 
-* Comparison page
 * Add groups controller specs
 * Add asin,amazon_link specs
-* Extract asin from url
 * Create notification model
-* Create email template showing changes using comparison page
-* Create a batch of groups to send out notifications
+* Move sibling record max validation into concern
+* Rename vacuum service
 
 ## TODO - Nice to have
 * React & material front-end
@@ -22,6 +20,7 @@ Note: I added a couple of hot sellers to my list and I ended up encountering a w
 * Show a list of snapshots
 * Better error handling
 * Smarter way of retrying jobs and information collection
+* Create a batch of groups to send out notifications
 
 ## Requirements
 
