@@ -2672,4 +2672,126 @@ http_interactions:
         Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-27T12%3A51%3A22Z&amp;v=2&amp;sig=210ptaBZlp7yHRo%252B784wOtbcsvWq3H1eu4eEy0p3Zmk%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
     http_version: 
   recorded_at: Sat, 26 Aug 2017 12:51:22 GMT
+- request:
+    method: get
+    uri: http://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJIS2RKSGQSBM252A&AssociateTag=alexpr00-20&ItemId=B01KO4Z9TS&Operation=ItemLookup&ResponseGroup=ItemAttributes,Images,SalesRank,Reviews&Service=AWSECommerceService&Signature=CLjket5WFNTlEr7wunNvKXk7GFPVF5fjKLvPNqE5xYo=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2017-08-30T06:24:03Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.2 (Language=Ruby; linux-vtfq)
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 30 Aug 2017 06:24:03 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: ASCII-8BIT
+      string: <?xml version="1.0" ?><ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.2 (Language=Ruby; linux-vtfq)"></Header></HTTPHeaders><RequestId>a76d334d-d966-40ad-a14b-26ebf835eded</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJIS2RKSGQSBM252A"></Argument><Argument Name="AssociateTag"
+        Value="alexpr00-20"></Argument><Argument Name="ItemId" Value="B01KO4Z9TS"></Argument><Argument
+        Name="Operation" Value="ItemLookup"></Argument><Argument Name="ResponseGroup"
+        Value="ItemAttributes,Images,SalesRank,Reviews"></Argument><Argument Name="Service"
+        Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod" Value="HmacSHA256"></Argument><Argument
+        Name="SignatureVersion" Value="2"></Argument><Argument Name="Timestamp" Value="2017-08-30T06:24:03Z"></Argument><Argument
+        Name="Version" Value="2013-08-01"></Argument><Argument Name="Signature" Value="CLjket5WFNTlEr7wunNvKXk7GFPVF5fjKLvPNqE5xYo="></Argument></Arguments><RequestProcessingTime>0.0182025040000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemLookupRequest><IdType>ASIN</IdType><ItemId>B01KO4Z9TS</ItemId><ResponseGroup>ItemAttributes</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>SalesRank</ResponseGroup><ResponseGroup>Reviews</ResponseGroup><VariationPage>All</VariationPage></ItemLookupRequest></Request><Item><ASIN>B01KO4Z9TS</ASIN><DetailPageURL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=165953&amp;creativeASIN=B01KO4Z9TS</DetailPageURL><ItemLinks><ItemLink><Description>Technical
+        Details</Description><URL>https://www.amazon.com/Mostsola-String-Perfect-Pictures-Artwork/dp/tech-data/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Baby Registry</Description><URL>https://www.amazon.com/gp/registry/baby/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wedding Registry</Description><URL>https://www.amazon.com/gp/registry/wedding/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Add
+        To Wishlist</Description><URL>https://www.amazon.com/gp/registry/wishlist/add-item.html?asin.0=B01KO4Z9TS&amp;SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>Tell
+        A Friend</Description><URL>https://www.amazon.com/gp/pdp/taf/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Customer Reviews</Description><URL>https://www.amazon.com/review/product/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink><ItemLink><Description>All
+        Offers</Description><URL>https://www.amazon.com/gp/offer-listing/B01KO4Z9TS?SubscriptionId=AKIAJIS2RKSGQSBM252A&amp;tag=alexpr00-20&amp;linkCode=xm2&amp;camp=2025&amp;creative=386001&amp;creativeASIN=B01KO4Z9TS</URL></ItemLink></ItemLinks><SalesRank>81859</SalesRank><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><ImageSets><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51y2r-Br1jL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61LtusogqPL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51WCeQAuj4L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6194IBdexlL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51Dr7aR7sML.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61UbghuznYL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51mtUwSCNNL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/619ZtejX3rL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51dhnSlySGL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/6126pJ%2BAlWL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51v3d2aLqeL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61KC0UUtNiL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="variant"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51tF8ijIPbL.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/61zUipL3ytL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet><ImageSet
+        Category="primary"><SwatchImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL30_.jpg</URL><Height
+        Units="pixels">30</Height><Width Units="pixels">30</Width></SwatchImage><SmallImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></SmallImage><ThumbnailImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL75_.jpg</URL><Height
+        Units="pixels">75</Height><Width Units="pixels">75</Width></ThumbnailImage><TinyImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL110_.jpg</URL><Height
+        Units="pixels">110</Height><Width Units="pixels">110</Width></TinyImage><MediumImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L._SL160_.jpg</URL><Height
+        Units="pixels">160</Height><Width Units="pixels">160</Width></MediumImage><LargeImage><URL>https://images-na.ssl-images-amazon.com/images/I/51noQyn4o2L.jpg</URL><Height
+        Units="pixels">500</Height><Width Units="pixels">500</Width></LargeImage><HiResImage><URL>https://images-na.ssl-images-amazon.com/images/I/71EgiSM9kZL.jpg</URL><Height
+        Units="pixels">1021</Height><Width Units="pixels">1021</Width></HiResImage></ImageSet></ImageSets><ItemAttributes><Brand>Mostsola</Brand><Color>White</Color><EAN>0646586013791</EAN><EANList><EANListElement>0646586013791</EANListElement></EANList><Feature>100%
+        Brand new and high quality.</Feature><Feature>LED photo display lighting by
+        Mostsola is a casual, artistic way to display your favorite photos and artworks</Feature><Feature>20
+        clear photo-clips. Each clip contains an LED that emits warm white light.</Feature><Feature>Features
+        cool bright light which isn't easy to become hot</Feature><Feature>Perfect
+        for different occasions such as wedding, hotel, business building, festival
+        ornament, home decoration, shop window, club, concert, singing hall, fashion
+        show, dancing hall, and stage and so on</Feature><Label>Mostsola</Label><ListPrice><Amount>599</Amount><CurrencyCode>USD</CurrencyCode><FormattedPrice>$5.99</FormattedPrice></ListPrice><Manufacturer>Mostsola</Manufacturer><MPN>Mostsola
+        956462</MPN><PackageDimensions><Height Units="hundredths-inches">150</Height><Length
+        Units="hundredths-inches">530</Length><Weight Units="hundredths-pounds">20</Weight><Width
+        Units="hundredths-inches">290</Width></PackageDimensions><PackageQuantity>10</PackageQuantity><PartNumber>Mostsola
+        956462</PartNumber><ProductGroup>Lighting</ProductGroup><ProductTypeName>HOME_LIGHTING_AND_LAMPS</ProductTypeName><Publisher>Mostsola</Publisher><Studio>Mostsola</Studio><Title>Mostsola
+        20 Pcs LED Photo Clip String Lights Perfect for Pictures Notes Artwork LED
+        Decor (Warm White)</Title><UPC>646586013791</UPC><UPCList><UPCListElement>646586013791</UPCListElement></UPCList></ItemAttributes><CustomerReviews><IFrameURL>https://www.amazon.com/reviews/iframe?akid=AKIAJIS2RKSGQSBM252A&amp;alinkCode=xm2&amp;asin=B01KO4Z9TS&amp;atag=alexpr00-20&amp;exp=2017-08-31T06%3A24%3A03Z&amp;v=2&amp;sig=PgysrQ1znuNQsYIEeuHkewpniXvkphh2N2m1DfmYj00%253D</IFrameURL><HasReviews>true</HasReviews></CustomerReviews></Item></Items></ItemLookupResponse>
+    http_version: 
+  recorded_at: Wed, 30 Aug 2017 06:24:03 GMT
 recorded_with: VCR 3.0.3
