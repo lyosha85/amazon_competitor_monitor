@@ -12,4 +12,8 @@ class Group < ApplicationRecord
   def max_groups_per_account
     errors.add :group, "Max #{MAX_PER_ACCOUNT} groups per account." if self.account.groups.count >= MAX_PER_ACCOUNT
   end
+
+  def asins
+    products.collect(&:asin).uniq
+  end
 end
