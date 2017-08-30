@@ -39,4 +39,20 @@ RSpec.describe Product, type: :model do
       end
     end
   end
+
+  context '.was_checked_today?' do
+    let(:product_checked_yesterday) { FactoryGirl.create(:product,
+                                                last_checked: 1.day.ago )}
+    let(:product_checked_today) { FactoryGirl.create(:product,
+                                                last_checked: Time.zone.now )}
+
+    it 'returns false if checked yesterday' do
+      expect(product_checked_yesterday.was_checked_today?).to be false
+    end
+
+    it 'returns true if checked today' do
+      expect(product_checked_today.was_checked_today?).to be true
+    end
+
+  end
 end

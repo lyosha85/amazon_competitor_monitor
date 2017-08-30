@@ -30,6 +30,10 @@ class Product < ApplicationRecord
   def set_asin_from_url
     self.asin = amazon_url
   end
+
+  def was_checked_today?
+    self.last_checked >= Time.zone.now.beginning_of_day
+  end
 end
 
 
