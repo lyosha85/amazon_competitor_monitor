@@ -9,12 +9,18 @@ class ProductsSnapshotsWorker
 
     snapshot_attributes = GetProductDetailsService.call(asin)
     snapshot = Snapshot.new(snapshot_attributes)
-
-    if snapshot.save
+    new_snapshot_attributes = snapshot.attributes.except('id', 'created_at',
+                                                         'updated_at')
+    previous_snapshot_attributes = Snapshot.where(asin: asin).last
+                                           .attributes.except('id',
+                                                              'created_at',
+                                                              'updated_at')
+    # Only create a snapshot if something changed
+    unless snapshot_attributes == previous_snapshot_attributes
+      snapshot.save!
       Product.where(asin: asin).each{|p| p.update(last_checked: Time.zone.now)}
     else
-      Rails.logger.warn "Failed to get data for #{asin}"
-      Rails.logger.warn snapshot.errors.full_messages
+      Rails.logger.info "#{asin} remained the same."
     end
   end
 
